@@ -18,6 +18,10 @@ public class Categoria {
     private String descricao;
     private List<Artigo> artigos;
 
+    public Categoria(String nome) {
+        this.nome = nome;
+    }
+    
     public Artigo getArtigo(Integer i){
         return artigos.get(i);
     }
