@@ -44,4 +44,9 @@ public class ArtigoTest extends TestCase {
         
         assertNotNull(artTest.getUsuario());
     }
+    
+    public void testSomar(){
+        int val = 5;
+        assertEquals(val, 1 + 4);
+    }
 }

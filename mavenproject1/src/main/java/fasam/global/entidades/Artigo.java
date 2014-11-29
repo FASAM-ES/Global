@@ -69,16 +69,4 @@ public final class Artigo {
         if(this.comentarios != null)
             this.comentarios.remove(_comentario);
     }
-    
-    public int inserir(){
-        return 0;
-    }
-    
-    public int excluir(){
-        return 0;
-    }
-    
-    public int atualizar(){
-        return 0;
-    }
 }
