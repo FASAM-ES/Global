@@ -19,6 +19,7 @@ public class Usuario {
     public Usuario(String nome){
         setNome(nome);
     }
+
     public final void setNome(String Nome) {
         this.Nome = Nome;
     }
