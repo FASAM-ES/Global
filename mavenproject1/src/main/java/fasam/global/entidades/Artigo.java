@@ -17,7 +17,11 @@ public class Artigo {
     String _titulo;
     String _descricao;
     List<Comentario> comentarios;
-            
+    
+    public Artigo(Comentario cComentario){
+        addComentarios(cComentario);
+    }
+    
     public int GetCodigo(){
         return _codigo;
     }
