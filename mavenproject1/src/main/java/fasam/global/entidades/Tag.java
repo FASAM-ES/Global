@@ -4,6 +4,8 @@
  */
 package fasam.global.entidades;
 
+import java.util.List;
+
 /**
  *
  * @author Aluno
@@ -11,7 +13,7 @@ package fasam.global.entidades;
 public class Tag {
     String _nome;
     String _descricao;
-
+    
     public String getNome() {
         return _nome;
     }
