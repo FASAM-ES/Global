@@ -51,19 +51,5 @@ public class Tag {
     public void setDescricao(String _descricao) {
         this._descricao = _descricao;
     }
-    
-    public void AddTag(Tag Tag) {
-        if (this.Tag == null) {
-            this.Tag=new ArrayList<Tag>();
-        }
-        this.Tag.add(Tag);
-    }
-    
-    public void RemUsuario(Usuario Usuario) {
-        if (this.Tag == null) {
-            this.Tag=new ArrayList<Tag>();
-        }
-        this.Tag.remove(Tag);
-    }
-    
+  
 }
