@@ -4,6 +4,7 @@
  */
 package fasam.global.entidades;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -13,6 +14,7 @@ import java.util.List;
 public class Tag {
     String _nome;
     String _descricao;
+    private List<Tag> Tag;
     
     public String getNome() {
         return _nome;
@@ -30,6 +32,18 @@ public class Tag {
         this._descricao = _descricao;
     }
     
+    public void AddTag(Tag Tag) {
+        if (this.Tag == null) {
+            this.Tag=new ArrayList<Tag>();
+        }
+        this.Tag.add(Tag);
+    }
     
+    public void RemUsuario(Usuario Usuario) {
+        if (this.Tag == null) {
+            this.Tag=new ArrayList<Tag>();
+        }
+        this.Tag.remove(Tag);
+    }
     
 }
