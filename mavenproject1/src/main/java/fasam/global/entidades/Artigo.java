@@ -53,9 +53,8 @@ public class Artigo {
     }
     
     public void remComentarios(Comentario _comentario) {
-        if(this.comentarios == null)
-            this.comentarios = new ArrayList<Comentario>();
-        this.comentarios.remove(_comentario);
+        if(this.comentarios != null)
+            this.comentarios.remove(_comentario);
     }
     
     public int inserir(){
