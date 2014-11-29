@@ -11,13 +11,22 @@ import java.util.List;
  *
  * @author Aluno
  */
-public class Artigo {
+public final class Artigo {
     
     int _codigo;
     String _titulo;
     String _descricao;
     List<Comentario> comentarios;
-            
+    Usuario _Usuario;
+    
+    public Artigo(Comentario cComentario){
+        addComentarios(cComentario);
+    }
+    
+    public Artigo(Usuario oUsuario){
+        _Usuario = oUsuario;
+    }
+        
     public int GetCodigo(){
         return _codigo;
     }
@@ -46,6 +55,10 @@ public class Artigo {
         return comentarios.get(i);
     }
 
+    public Usuario getUsuario() {
+        return _Usuario;
+    }
+        
     public void addComentarios(Comentario _comentario) {
         if(this.comentarios == null)
             this.comentarios = new ArrayList<Comentario>();
@@ -55,17 +68,5 @@ public class Artigo {
     public void remComentarios(Comentario _comentario) {
         if(this.comentarios != null)
             this.comentarios.remove(_comentario);
-    }
-    
-    public int inserir(){
-        return 0;
-    }
-    
-    public int excluir(){
-        return 0;
-    }
-    
-    public int atualizar(){
-        return 0;
     }
 }
