@@ -16,7 +16,10 @@ public class Usuario {
     private String Telefone;
     private String CPF;
 
-    public void setNome(String Nome) {
+    public Usuario(String nome){
+        setNome(nome);
+    }
+    public final void setNome(String Nome) {
         this.Nome = Nome;
     }
 
