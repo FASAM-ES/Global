@@ -45,5 +45,6 @@ public class ComentarioTest extends TestCase {
         Comentario comentario = new Comentario(); 
         comentario.setTitulo("Título do Comentário");
         assertNotNull(comentario.getTitulo());
+        
     }
 }
