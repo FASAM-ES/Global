@@ -11,9 +11,9 @@ import junit.framework.TestCase;
  *
  * @author Aluno
  */
-public class DeveConterUsuarios extends TestCase {
+public class UsuarioTest extends TestCase {
     
-    public DeveConterUsuarios(String testName) {
+    public UsuarioTest(String testName) {
         super(testName);
     }
     
