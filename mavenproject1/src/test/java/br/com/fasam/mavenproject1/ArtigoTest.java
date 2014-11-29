@@ -6,6 +6,8 @@ package br.com.fasam.mavenproject1;
 
 import fasam.global.entidades.Artigo;
 import fasam.global.entidades.Comentario;
+import fasam.global.entidades.Usuario;
+import static junit.framework.Assert.assertNotNull;
 import junit.framework.Test;
 import junit.framework.TestCase;
 
@@ -31,9 +33,15 @@ public class ArtigoTest extends TestCase {
     // TODO add test methods here. The name must begin with 'test'. For example:
     // public void testHello() {}
     
-    public void testUsuarioEmArtigo(){
+    public void testComentarioEmArtigo(){
         Artigo artTest = new Artigo(new Comentario());
         
         assertNotNull(artTest.getComentario(0));
+    }
+    
+    public void testUsuarioEmArtigo(){
+        Artigo artTest = new Artigo(new Usuario());
+        
+        assertNotNull(artTest.getUsuario());
     }
 }
