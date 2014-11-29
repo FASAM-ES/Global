@@ -14,7 +14,27 @@ import java.util.List;
 public class Tag {
     String _nome;
     String _descricao;
-    private List<Tag> Tag;
+    List<Artigo> artigos;
+
+    public Artigo getArtigos(Integer index) {
+        if (artigos == null) {
+            this.artigos= new ArrayList<Artigo>();
+        }
+        return artigos.get(index);
+    }
+    
+    public void AddArtigos(Artigo artigo) {
+        if (artigos == null) {
+            this.artigos= new ArrayList<Artigo>();
+        }
+        this.artigos.add(artigo);
+    }
+    
+    public void RemArtigos(Artigo artigo) {
+        if (artigos != null) {
+            this.artigos.remove(artigo);
+        }
+    }
     
     public String getNome() {
         return _nome;
@@ -31,19 +51,5 @@ public class Tag {
     public void setDescricao(String _descricao) {
         this._descricao = _descricao;
     }
-    
-    public void AddTag(Tag Tag) {
-        if (this.Tag == null) {
-            this.Tag=new ArrayList<Tag>();
-        }
-        this.Tag.add(Tag);
-    }
-    
-    public void RemUsuario(Usuario Usuario) {
-        if (this.Tag == null) {
-            this.Tag=new ArrayList<Tag>();
-        }
-        this.Tag.remove(Tag);
-    }
-    
+  
 }
