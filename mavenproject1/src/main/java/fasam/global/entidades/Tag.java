@@ -1,6 +1,6 @@
 /*
  * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * and open the template in the editor. teste commit
  */
 package fasam.global.entidades;
 
@@ -52,6 +52,18 @@ public class Tag {
         this._descricao = _descricao;
     }
     
+    public void AddTag(Tag Tag) {
+        if (this.Tag == null) {
+            this.Tag=new ArrayList<Tag>();
+        }
+        this.Tag.add(Tag);
+    }
     
+    public void RemUsuario(Usuario Usuario) {
+        if (this.Tag == null) {
+            this.Tag=new ArrayList<Tag>();
+        }
+        this.Tag.remove(Tag);
+    }
     
 }
