@@ -4,6 +4,9 @@
  */
 package fasam.global.entidades;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Aluno
@@ -11,6 +14,27 @@ package fasam.global.entidades;
 public class Tag {
     String _nome;
     String _descricao;
+    List<Artigo> artigos;
+
+    public Artigo getArtigos(Integer index) {
+        if (artigos == null) {
+            this.artigos= new ArrayList<Artigo>();
+        }
+        return artigos.get(index);
+    }
+    
+    public void AddArtigos(Artigo artigo) {
+        if (artigos == null) {
+            this.artigos= new ArrayList<Artigo>();
+        }
+        this.artigos.add(artigo);
+    }
+    
+    public void RemArtigos(Artigo artigo) {
+        if (artigos != null) {
+            this.artigos.remove(artigo);
+        }
+    }
     
     public String getNome() {
         return _nome;
