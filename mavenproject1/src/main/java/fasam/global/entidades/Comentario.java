@@ -28,10 +28,9 @@ public class Comentario {
     }
     
     public void RemUsuario(Usuario Usuario) {
-        if (this.Usuarios == null) {
-            this.Usuarios=new ArrayList<Usuario>();
+        if (this.Usuarios != null) {
+            this.Usuarios.remove(Usuario);
         }
-        this.Usuarios.remove(Usuario);
     }
     
     public String getTitulo() {
