@@ -4,8 +4,6 @@
  */
 package fasam.global.entidades;
 
-import java.util.List;
-
 /**
  *
  * @author Aluno
