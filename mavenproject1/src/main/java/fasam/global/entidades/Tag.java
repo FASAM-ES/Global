@@ -1,7 +1,7 @@
 /*
  * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */ teste commit
+ * and open the template in the editor. teste commit
+ */
 package fasam.global.entidades;
 
 import java.util.ArrayList;
