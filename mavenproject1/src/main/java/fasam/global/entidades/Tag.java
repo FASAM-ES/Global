@@ -15,7 +15,10 @@ public class Tag {
     String _nome;
     String _descricao;
     List<Artigo> artigos;
-
+public Tag(Artigo artigo){
+    this.AddArtigos(artigo);
+}
+        
     public Artigo getArtigos(Integer index) {
         if (artigos == null) {
             this.artigos= new ArrayList<Artigo>();
