@@ -11,9 +11,9 @@ import junit.framework.TestCase;
  *
  * @author Aluno
  */
-public class ValidarCategoria extends TestCase {
+public class CategoriaTest extends TestCase {
     
-    public ValidarCategoria(String testName) {
+    public CategoriaTest(String testName) {
         super(testName);
     }
     
