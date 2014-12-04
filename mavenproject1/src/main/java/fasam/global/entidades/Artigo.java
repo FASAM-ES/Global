@@ -23,36 +23,36 @@ public final class Artigo {
         addComentarios(comentario);
     }
     
-    public Artigo(Usuario usuario){
-        this.usuario = usuario;
+    public Artigo(Usuario value){
+        this.usuario = value;
     }
         
     public int GetCodigo(){
         return this.codigo;
     }
     
-    public void SetCodigo(int codigo){
-        this.codigo = codigo;
+    public void SetCodigo(int value){
+        this.codigo = value;
     }
     
     public String GetTitulo(){
         return this.titulo;
     }
     
-    public void SetTitulo(String titulo){
-        this.titulo = titulo;
+    public void SetTitulo(String value){
+        this.titulo = value;
     }
  
     public String GetDescricao(){
         return this.descricao;
     }
     
-    public void SetDescricao(String descricao){
-        this.descricao = descricao;
+    public void SetDescricao(String value){
+        this.descricao = value;
     }
 
-    public Comentario getComentario(int i) {
-        return comentarios.get(i);
+    public Comentario getComentario(int index) {
+        return comentarios.get(index);
     }
 
     public Usuario getUsuario() {

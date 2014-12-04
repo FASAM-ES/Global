@@ -22,14 +22,14 @@ public class Tag {
         
     public Artigo getArtigos(Integer index) {
         if (this.artigos == null) {
-            this.artigos= new ArrayList<Artigo>();
+            this.artigos = new ArrayList<Artigo>();
         }
         return this.artigos.get(index);
     }
     
     public void AddArtigos(Artigo artigo) {
         if (this.artigos == null) {
-            this.artigos= new ArrayList<Artigo>();
+            this.artigos = new ArrayList<Artigo>();
         }
         this.artigos.add(artigo);
     }
@@ -48,12 +48,12 @@ public class Tag {
         return descricao;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNome(String value) {
+        this.nome = value;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
+    public void setDescricao(String value) {
+        this.descricao = value;
     }
   
 }

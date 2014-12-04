@@ -16,8 +16,8 @@ public class Comentario {
     private String descricao;
     private List<Usuario> usuarios;
 
-    public Usuario getUsuarios(Integer index) {
-        return this.usuarios.get(index);
+    public Usuario getUsuarios(Integer value) {
+        return this.usuarios.get(value);
     }
     
     public void AddUsuario(Usuario usuario) {
@@ -38,15 +38,15 @@ public class Comentario {
         return this.titulo;
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
+    public void setTitulo(String value) {
+        this.titulo = value;
     }
 
     public String getDescricao() {
         return this.descricao;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
+    public void setDescricao(String value) {
+        this.descricao = value;
     }
 }
