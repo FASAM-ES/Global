@@ -27,27 +27,27 @@ public final class Artigo {
         this.usuario = value;
     }
         
-    public int GetCodigo(){
+    public int getCodigo(){
         return this.codigo;
     }
     
-    public void SetCodigo(int value){
+    public void setCodigo(int value){
         this.codigo = value;
     }
     
-    public String GetTitulo(){
+    public String getTitulo(){
         return this.titulo;
     }
     
-    public void SetTitulo(String value){
+    public void setTitulo(String value){
         this.titulo = value;
     }
  
-    public String GetDescricao(){
+    public String getDescricao(){
         return this.descricao;
     }
     
-    public void SetDescricao(String value){
+    public void setDescricao(String value){
         this.descricao = value;
     }
 
