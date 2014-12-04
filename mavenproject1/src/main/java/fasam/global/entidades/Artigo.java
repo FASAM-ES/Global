@@ -60,13 +60,15 @@ public final class Artigo {
     }
         
     public void addComentarios(Comentario comentario) {
-        if(this.comentarios == null)
+        if(this.comentarios == null) {
             this.comentarios = new ArrayList<Comentario>();
+        }
         this.comentarios.add(comentario);
     }
     
     public void remComentarios(Comentario comentario) {
-        if(this.comentarios != null)
+        if(this.comentarios != null) {
             this.comentarios.remove(comentario);
+        }
     }
 }
