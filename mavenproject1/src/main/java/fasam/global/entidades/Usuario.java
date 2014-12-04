@@ -9,62 +9,62 @@ package fasam.global.entidades;
  * @author Aluno
  */
 public class Usuario {
-    private String Nome;
-    private String Login;
-    private String Senha;
-    private String Email;
-    private String Telefone;
-    private String CPF;
+    private String nome;
+    private String login;
+    private String senha;
+    private String email;
+    private String telefone;
+    private String cpf;
 
     public Usuario(String nome){
         setNome(nome);
     }
 
-    public final void setNome(String Nome) {
-        this.Nome = Nome;
+    public final void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public void setLogin(String Login) {
-        this.Login = Login;
+    public void setLogin(String login) {
+        this.login = login;
     }
 
-    public void setSenha(String Senha) {
-        this.Senha = Senha;
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 
-    public void setEmail(String Email) {
-        this.Email = Email;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public void setTelefone(String Telefone) {
-        this.Telefone = Telefone;
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
 
-    public void setCPF(String CPF) {
-        this.CPF = CPF;
+    public void setCPF(String cpf) {
+        this.cpf = cpf;
     }
 
     public String getNome() {
-        return Nome;
+        return nome;
     }
 
     public String getLogin() {
-        return Login;
+        return login;
     }
 
     public String getSenha() {
-        return Senha;
+        return senha;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     public String getTelefone() {
-        return Telefone;
+        return telefone;
     }
 
     public String getCPF() {
-        return CPF;
+        return cpf;
     }
 }

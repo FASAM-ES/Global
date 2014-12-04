@@ -12,41 +12,41 @@ import java.util.List;
  * @author Aluno
  */
 public class Comentario {
-    private String Titulo;
-    private String Descricao;
-    private List<Usuario> Usuarios;
+    private String titulo;
+    private String descricao;
+    private List<Usuario> usuarios;
 
     public Usuario getUsuarios(Integer i) {
-        return Usuarios.get(i);
+        return this.usuarios.get(i);
     }
     
-    public void AddUsuario(Usuario Usuario) {
-        if (this.Usuarios == null) {
-            this.Usuarios=new ArrayList<Usuario>();
+    public void AddUsuario(Usuario usuario) {
+        if (this.usuarios == null) {
+            this.usuarios=new ArrayList<Usuario>();
         }
-        this.Usuarios.add(Usuario);
+        this.usuarios.add(usuario);
     }
     
-    public void RemUsuario(Usuario Usuario) {
-        if (this.Usuarios == null) {
-            this.Usuarios=new ArrayList<Usuario>();
+    public void RemUsuario(Usuario usuario) {
+        if (this.usuarios == null) {
+            this.usuarios=new ArrayList<Usuario>();
         }
-        this.Usuarios.remove(Usuario);
+        this.usuarios.remove(usuario);
     }
     
     public String getTitulo() {
-        return Titulo;
+        return this.titulo;
     }
 
-    public void setTitulo(String Titulo) {
-        this.Titulo = Titulo;
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 
     public String getDescricao() {
-        return Descricao;
+        return this.descricao;
     }
 
-    public void setDescricao(String Descricao) {
-        this.Descricao = Descricao;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 }

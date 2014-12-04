@@ -13,42 +13,42 @@ import java.util.List;
  */
 public final class Artigo {
     
-    int _codigo;
-    String _titulo;
-    String _descricao;
+    int codigo;
+    String titulo;
+    String descricao;
     List<Comentario> comentarios;
-    Usuario _Usuario;
+    Usuario usuario;
     
     public Artigo(Comentario cComentario){
         addComentarios(cComentario);
     }
     
-    public Artigo(Usuario oUsuario){
-        _Usuario = oUsuario;
+    public Artigo(Usuario usuario){
+        usuario = usuario;
     }
         
     public int GetCodigo(){
-        return _codigo;
+        return codigo;
     }
     
-    public void SetCodigo(int icodigo){
-        _codigo = icodigo;
+    public void SetCodigo(int codigo){
+        codigo = codigo;
     }
     
     public String GetTitulo(){
-        return _titulo;
+        return titulo;
     }
     
-    public void SetTitulo(String stitulo){
-        _titulo = stitulo;
+    public void SetTitulo(String titulo){
+        titulo = titulo;
     }
  
     public String GetDescricao(){
-        return _descricao;
+        return descricao;
     }
     
-    public void SetDescricao(String sdescricao){
-        _descricao = sdescricao;
+    public void SetDescricao(String descricao){
+        descricao = descricao;
     }
 
     public Comentario getComentario(int i) {
@@ -56,17 +56,17 @@ public final class Artigo {
     }
 
     public Usuario getUsuario() {
-        return _Usuario;
+        return usuario;
     }
         
-    public void addComentarios(Comentario _comentario) {
+    public void addComentarios(Comentario comentario) {
         if(this.comentarios == null)
             this.comentarios = new ArrayList<Comentario>();
-        this.comentarios.add(_comentario);
+        this.comentarios.add(comentario);
     }
     
-    public void remComentarios(Comentario _comentario) {
+    public void remComentarios(Comentario comentario) {
         if(this.comentarios != null)
-            this.comentarios.remove(_comentario);
+            this.comentarios.remove(comentario);
     }
 }
