@@ -19,36 +19,36 @@ public final class Artigo {
     List<Comentario> comentarios;
     Usuario usuario;
     
-    public Artigo(Comentario cComentario){
-        addComentarios(cComentario);
+    public Artigo(Comentario comentario){
+        addComentarios(comentario);
     }
     
     public Artigo(Usuario usuario){
-        usuario = usuario;
+        this.usuario = usuario;
     }
         
     public int GetCodigo(){
-        return codigo;
+        return this.codigo;
     }
     
     public void SetCodigo(int codigo){
-        codigo = codigo;
+        this.codigo = codigo;
     }
     
     public String GetTitulo(){
-        return titulo;
+        return this.titulo;
     }
     
     public void SetTitulo(String titulo){
-        titulo = titulo;
+        this.titulo = titulo;
     }
  
     public String GetDescricao(){
-        return descricao;
+        return this.descricao;
     }
     
     public void SetDescricao(String descricao){
-        descricao = descricao;
+        this.descricao = descricao;
     }
 
     public Comentario getComentario(int i) {
@@ -56,7 +56,7 @@ public final class Artigo {
     }
 
     public Usuario getUsuario() {
-        return usuario;
+        return this.usuario;
     }
         
     public void addComentarios(Comentario comentario) {

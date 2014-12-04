@@ -16,20 +16,20 @@ public class Comentario {
     private String descricao;
     private List<Usuario> usuarios;
 
-    public Usuario getUsuarios(Integer i) {
-        return this.usuarios.get(i);
+    public Usuario getUsuarios(Integer index) {
+        return this.usuarios.get(index);
     }
     
     public void AddUsuario(Usuario usuario) {
         if (this.usuarios == null) {
-            this.usuarios=new ArrayList<Usuario>();
+            this.usuarios = new ArrayList<Usuario>();
         }
         this.usuarios.add(usuario);
     }
     
     public void RemUsuario(Usuario usuario) {
         if (this.usuarios == null) {
-            this.usuarios=new ArrayList<Usuario>();
+            this.usuarios = new ArrayList<Usuario>();
         }
         this.usuarios.remove(usuario);
     }

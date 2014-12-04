@@ -12,47 +12,48 @@ import java.util.List;
  * @author Aluno
  */
 public class Tag {
-    String _nome;
-    String _descricao;
+    String nome;
+    String descricao;
     List<Artigo> artigos;
-public Tag(Artigo artigo){
-    this.AddArtigos(artigo);
-}
+    
+    public Tag(Artigo artigo){
+        this.AddArtigos(artigo);
+    }
         
     public Artigo getArtigos(Integer index) {
-        if (artigos == null) {
+        if (this.artigos == null) {
             this.artigos= new ArrayList<Artigo>();
         }
-        return artigos.get(index);
+        return this.artigos.get(index);
     }
     
     public void AddArtigos(Artigo artigo) {
-        if (artigos == null) {
+        if (this.artigos == null) {
             this.artigos= new ArrayList<Artigo>();
         }
         this.artigos.add(artigo);
     }
     
     public void RemArtigos(Artigo artigo) {
-        if (artigos != null) {
+        if (this.artigos != null) {
             this.artigos.remove(artigo);
         }
     }
     
     public String getNome() {
-        return _nome;
+        return nome;
     }
 
     public String getDescricao() {
-        return _descricao;
+        return descricao;
     }
 
-    public void setNome(String _nome) {
-        this._nome = _nome;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public void setDescricao(String _descricao) {
-        this._descricao = _descricao;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
   
 }
