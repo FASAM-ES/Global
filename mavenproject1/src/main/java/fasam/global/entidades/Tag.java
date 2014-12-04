@@ -17,7 +17,7 @@ public class Tag {
     List<Artigo> artigos;
     
     public Tag(Artigo artigo){
-        this.AddArtigos(artigo);
+        this.addArtigos(artigo);
     }
         
     public Artigo getArtigos(Integer index) {
@@ -27,14 +27,14 @@ public class Tag {
         return this.artigos.get(index);
     }
     
-    public void AddArtigos(Artigo artigo) {
+    public void addArtigos(Artigo artigo) {
         if (this.artigos == null) {
             this.artigos = new ArrayList<Artigo>();
         }
         this.artigos.add(artigo);
     }
     
-    public void RemArtigos(Artigo artigo) {
+    public void remArtigos(Artigo artigo) {
         if (this.artigos != null) {
             this.artigos.remove(artigo);
         }

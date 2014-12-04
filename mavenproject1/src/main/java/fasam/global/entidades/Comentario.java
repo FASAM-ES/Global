@@ -20,14 +20,14 @@ public class Comentario {
         return this.usuarios.get(value);
     }
     
-    public void AddUsuario(Usuario usuario) {
+    public void addUsuario(Usuario usuario) {
         if (this.usuarios == null) {
             this.usuarios = new ArrayList<Usuario>();
         }
         this.usuarios.add(usuario);
     }
     
-    public void RemUsuario(Usuario usuario) {
+    public void remUsuario(Usuario usuario) {
         if (this.usuarios == null) {
             this.usuarios = new ArrayList<Usuario>();
         }
