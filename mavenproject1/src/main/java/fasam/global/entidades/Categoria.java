@@ -74,7 +74,7 @@ public class Categoria {
     
     /***
      * Recupera a descrição.
-     * @return    .
+     * @return.
      */
     public String getDescricao() {
         return descricao;
