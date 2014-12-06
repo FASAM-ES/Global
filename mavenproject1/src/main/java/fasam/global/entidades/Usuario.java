@@ -20,6 +20,11 @@ public class Usuario {
         setNome(nome);
     }
 
+    public Usuario(String nome, String senha){
+        setNome(nome);
+        setSenha(senha);
+    }
+    
     public final void setNome(String nome) {
         this.nome = nome;
     }
