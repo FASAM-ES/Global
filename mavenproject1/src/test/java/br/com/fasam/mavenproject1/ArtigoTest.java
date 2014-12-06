@@ -44,7 +44,7 @@ public class ArtigoTest extends TestCase {
     }
     
     public void testSomar(){
-        int val = 5;
-        assertEquals(val, 1 + 4);
+        int val = 6;
+        assertEquals(val, 2 + 4);
     }
 }
