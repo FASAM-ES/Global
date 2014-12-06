@@ -18,6 +18,7 @@
         <url>http://ci.fasam.info.tm:8080/nexus/content/repositories/releases/</url>
         </repository>
         <snapshotRepository>
+            <id>snapshots</id>
             <name>Repositorio de Snapshots</name>
             <url>http://ci.fasam.info.tm:8080/nexus/content/repositories/snapshots/</url>
             <uniqueVersion>true</uniqueVersion>
