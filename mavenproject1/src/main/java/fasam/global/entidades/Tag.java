@@ -9,13 +9,17 @@ import java.util.List;
 
 /**
  *
- * @author Aluno
+ * @author Tiago Santana
  */
 public class Tag {
     String nome;
     String descricao;
     List<Artigo> artigos;
-    
+     
+    /**
+     * Cria a instância do artigo pelo comentário
+     * @param comentario 
+    */
     public Tag(Artigo artigo){
         this.addArtigos(artigo);
     }
