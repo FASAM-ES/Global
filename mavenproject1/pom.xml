@@ -2,6 +2,18 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
+<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>Repositorio de Releases</name>
+        <url>http://ci.fasam.info.tm:8080/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <name>Repositorio de Snapshots</name>
+            <url>http://ci.fasam.info.tm:8080/nexus/content/repositories/snapshots/</url>
+            <uniqueVersion>true</uniqueVersion>
+        </snapshotRepository>
+</distributionManagement>    
   <groupId>Br.com.fasam</groupId>
   <artifactId>mavenproject1</artifactId>
   <version>1.0-SNAPSHOT</version>
